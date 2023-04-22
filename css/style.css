@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --color-aqua: #22D4FD;
+    --color-body: #000;
+    --color-font: #F6F6F6;
+    --font-krona-one: 'Krona One', sans-serif;
+    --font-montserrat : 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--color-body);
+    box-sizing: border-box;
+    color: var(--color-font);
+    font-family: var(--font-montserrat);
+}
+
+
+    /* Header */
+
+.header {
+    height: 70px;
+    margin-left: 12rem;
+}
+
+.header__nav {
+    display: flex;
+    column-gap: 80px;
+    height: 100%;
+    align-items: end;
+}
+
+.nav__link {
+    color: var(--color-aqua);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+    
+
+    /* Main */
+    
+.main {
+    max-width: 1200px;
+    min-height: calc(100vh - 70px - 2rem);
+    display: flex;
+    column-gap: 3rem;
+    align-items: center;
+    margin: 1rem 1rem 1rem 12rem;
+}
+
+.wrapper__main {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.title {
+    font-family: var(--font-krona-one);
+    font-size: 2.25rem;
+    line-height: 1.5;
+}
+
+.highlight__title {
+    color: var(--color-aqua);
+}
+
+.paragraph {
+    font-size: 1.5rem;
+    line-height: 1.5;   
+}
+
+.social__media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+}
+
+.social__media__title {
+    font-family: var(--font-krona-one);
+    font-size: 1.5rem;
+}
+
+.social__media a {
+    color: var(--color-font);
+    background-color: transparent;
+    border: 2px solid var(--color-aqua);
+    border-radius: 8px;
+    width: 50%;
+    padding: 1rem 0;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1.5rem;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: .5rem;
+    transition: transform .3s;
+}
+
+.social__media > a:nth-of-type(1)::before {
+    content: url('../assets/logo_github.svg');
+}
+
+.social__media > a:nth-of-type(2)::before {
+    content: url('../assets/logo_linkedin.svg');
+}
+
+.social__media > a:nth-of-type(3)::before {
+    content: url('../assets/logo_twitch.svg');
+}
+
+.social__media a:hover {
+    transform: scale(1.05);
+}
+
+.image__presentation {
+    width: 50%;
+}
+
+    /* Footer */
+
+.footer {
+    background-color: var(--color-aqua);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer > .paragraph {
+    color: #000;
+}

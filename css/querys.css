@@ -1,0 +1,30 @@
+@media screen and (max-width: 1024px) {
+    .header {
+        margin: 0;
+        width: 100vw;
+    }
+
+    .header__nav {
+        justify-content: center;
+    }
+
+    .main {
+        min-height: auto;
+        flex-direction: column-reverse;
+        margin: 120px 0 70px 0;
+        padding: 0 3rem; 
+    }
+
+    .social__media {
+        margin-top: 80px;
+    }
+
+    .image__presentation {
+        margin-bottom: 80px;
+        width: 80%;
+    }
+
+    .social__media > a {
+        width: 80%;
+    }
+}
